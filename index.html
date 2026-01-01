@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Study Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="brand">Study Hub</h1>
+      <p class="subtitle">Choose a section to begin</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card-grid">
+      <a class="card-link" href="pca.html">
+        <div class="card">
+          <h2>PCA</h2>
+          <p>Go to PCA resources</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="pcb.html">
+        <div class="card">
+          <h2>PCB</h2>
+          <p>Go to PCB resources</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="proknow.html">
+        <div class="card">
+          <h2>ProKnow</h2>
+          <p>Rotating quizzes + practice links</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Study Hub</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
